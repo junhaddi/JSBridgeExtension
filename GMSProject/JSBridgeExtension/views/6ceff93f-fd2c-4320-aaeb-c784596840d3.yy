@@ -32,7 +32,7 @@
         "9d31a77c-8c53-46de-8bd5-828a3cd819a8"
     ],
     "filterType": "GMScript",
-    "folderName": "background",
+    "folderName": "layer_background",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
