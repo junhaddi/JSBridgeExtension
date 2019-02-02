@@ -23,30 +23,6 @@
     "extensionName": "",
     "files": [
         {
-            "id": "3d73aad8-99c0-403f-9f85-3c20381b57b3",
-            "modelName": "GMExtensionFile",
-            "mvc": "1.0",
-            "ProxyFiles": [
-                
-            ],
-            "constants": [
-                
-            ],
-            "copyToTargets": -1,
-            "filename": "gms_UPPERCASE-CORE-BROWSER.js",
-            "final": "",
-            "functions": [
-                
-            ],
-            "init": "",
-            "kind": 5,
-            "order": [
-                
-            ],
-            "origname": "",
-            "uncompress": false
-        },
-        {
             "id": "9a1caea8-33ce-4fda-b763-133b8a90b9aa",
             "modelName": "GMExtensionFile",
             "mvc": "1.0",

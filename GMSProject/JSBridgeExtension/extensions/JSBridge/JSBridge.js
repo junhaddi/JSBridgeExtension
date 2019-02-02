@@ -1,5 +1,12 @@
-const CONST_VAL_NAMES = [
-	'room_first'
+const CONST_NAMES = [
+	
+	// 룸 관련된 상수들
+	'room_first',
+	'room_last',
+	'room',
+	'room_height',
+	'room_width',
+	'room_persistent'
 ];
 
 let jsbridge_init = () => {
@@ -11,7 +18,7 @@ let jsbridge_init = () => {
 			funcName = funcName.substring(11);
 
 			if (CHECK_IS_IN({
-				array : CONST_VAL_NAMES,
+				array : CONST_NAMES,
 				value : funcName
 			}) !== true) {
 
@@ -36,7 +43,7 @@ let jsbridge_step = () => {
 			funcName = funcName.substring(11);
 
 			if (CHECK_IS_IN({
-				array : CONST_VAL_NAMES,
+				array : CONST_NAMES,
 				value : funcName
 			}) === true) {
 

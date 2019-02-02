@@ -7,7 +7,7 @@ Welcome to UPPERCASE-CORE! (http://uppercase.io)
 */
 
 // 웹 브라우저 환경에서는 window가 global 객체 입니다.
-global = window;
+/*let */global = window;
 
 /*
  * 기본 설정
