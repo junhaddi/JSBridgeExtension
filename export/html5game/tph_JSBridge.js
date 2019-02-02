@@ -14,7 +14,13 @@ const CONST_NAMES = [
 	'layerelementtype_sprite',
 	'layerelementtype_tilemap',
 	'layerelementtype_particlesystem',
-	'layerelementtype_tile'
+	'layerelementtype_tile',
+	
+	// 타일맵 관련 상수들
+	'tile_rotate',
+	'tile_mirror',
+	'tile_flip',
+	'tile_index_mask'
 ];
 
 let jsbridge_init = () => {
