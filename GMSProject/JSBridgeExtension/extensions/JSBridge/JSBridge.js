@@ -1,17 +1,25 @@
 const CONST_NAMES = [
 	
-	// 룸 관련된 상수들
+	// 룸 관련 상수들
 	'room_first',
 	'room_last',
 	'room',
 	'room_height',
 	'room_width',
-	'room_persistent'
+	'room_persistent',
+	
+	// 레이어 관련 상수들
+	'layerelementtype_background',
+	'layerelementtype_instance',
+	'layerelementtype_sprite',
+	'layerelementtype_tilemap',
+	'layerelementtype_particlesystem',
+	'layerelementtype_tile'
 ];
 
 let jsbridge_init = () => {
 
-	EACH(global, (func, funcName) => {
+	EACH(window, (func, funcName) => {
 		
 		if (funcName.substring(0, 11) === 'gmcallback_') {
 
@@ -22,7 +30,7 @@ let jsbridge_init = () => {
 				value : funcName
 			}) !== true) {
 
-				global[funcName] = function() {
+				window[funcName] = function() {
 					let args = [undefined, undefined];
 					EACH(arguments, (argument) => {
 						args.push(argument);
@@ -36,7 +44,7 @@ let jsbridge_init = () => {
 
 let jsbridge_step = () => {
 
-	EACH(global, (func, funcName) => {
+	EACH(window, (func, funcName) => {
 		
 		if (funcName.substring(0, 11) === 'gmcallback_') {
 
@@ -47,7 +55,7 @@ let jsbridge_step = () => {
 				value : funcName
 			}) === true) {
 
-				global[funcName] = func(undefined, undefined);
+				window[funcName] = func(undefined, undefined);
 			}
 		}
 	});
