@@ -20,7 +20,24 @@ const CONST_NAMES = [
 	'tile_rotate',
 	'tile_mirror',
 	'tile_flip',
-	'tile_index_mask'
+	'tile_index_mask',
+	
+	// 스프라이트 관련 상수들
+	'spritespeed_framespersecond',
+	'spritespeed_framespergameframe',
+	'sprite_index',
+	'sprite_width',
+	'sprite_height',
+	'sprite_xoffset',
+	'sprite_yoffset',
+	'image_alpha',
+	'image_angle',
+	'image_blend',
+	'image_index',
+	'image_number',
+	'image_speed',
+	'image_xscale',
+	'image_yscale'
 ];
 
 let jsbridge_init = () => {
