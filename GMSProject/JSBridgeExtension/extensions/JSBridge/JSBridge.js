@@ -37,7 +37,19 @@ const CONST_NAMES = [
 	'image_number',
 	'image_speed',
 	'image_xscale',
-	'image_yscale'
+	'image_yscale',
+	
+	// 오디오 관련 상수들
+	'audio_falloff_exponent_distance',
+	'audio_falloff_exponent_distance_clamped',
+	'audio_falloff_inverse_distance',
+	'audio_falloff_inverse_distance_clamped',
+	'audio_falloff_linear_distance',
+	'audio_falloff_linear_distance_clamped',
+	'audio_falloff_none',
+	'audio_mono',
+	'audio_stereo',
+	'audio_3d'
 ];
 
 let jsbridge_init = () => {
