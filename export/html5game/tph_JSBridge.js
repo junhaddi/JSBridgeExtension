@@ -58,7 +58,45 @@ const CONST_NAMES = [
 	'path_speed',
 	'path_scale',
 	'path_orientation',
-	'path_endaction'
+	'path_endaction',
+	
+	// 타임라인 관련 상수들
+	'timeline_index',
+	'timeline_running',
+	'timeline_speed',
+	'timeline_position',
+	'timeline_loop',
+	
+	// 인스턴스 관련 상수들
+	'id',
+	'visible',
+	'solid',
+	'persistent',
+	'depth',
+	'layer',
+	// alarm //TODO: 처리해야 함
+	'object_index',
+	'health',
+	'lives',
+	'score',
+	'direction',
+	'friction',
+	'gravity',
+	'gravity_direction',
+	'hspeed',
+	'vspeed',
+	'speed',
+	'xstart',
+	'ystart',
+	'x',
+	'y',
+	'xprevious',
+	'yprevious',
+	'mask_index',
+	'bbox_bottom',
+	'bbox_left',
+	'bbox_right',
+	'bbox_top'
 ];
 
 let jsbridge_init = () => {
