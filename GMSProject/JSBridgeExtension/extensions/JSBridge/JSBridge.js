@@ -49,7 +49,16 @@ const CONST_NAMES = [
 	'audio_falloff_none',
 	'audio_mono',
 	'audio_stereo',
-	'audio_3d'
+	'audio_3d',
+	
+	// 경로 관련 상수들
+	'path_index',
+	'path_position',
+	'path_positionprevious',
+	'path_speed',
+	'path_scale',
+	'path_orientation',
+	'path_endaction'
 ];
 
 let jsbridge_init = () => {
