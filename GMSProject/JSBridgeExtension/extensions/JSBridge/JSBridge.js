@@ -60,6 +60,25 @@ const CONST_NAMES = [
 	'path_orientation',
 	'path_endaction',
 	
+	// 쉐이더 관련 상수들
+	'MATRIX_VIEW',
+	'MATRIX_PROJECTION',
+	'MATRIX_WORLD',
+	'MATRIX_WORLD_VIEW',
+	'MATRIX_WORLD_VIEW_PROJECTION',
+	'MATRIX_MAX',
+	'MAX_VS_LIGHTS',
+	// gm_Matrices[matrix] //TODO: 처리해야 함
+	'gm_BaseTexture',
+	'gm_LightingEnabled',
+	'gm_FogStart',
+	'gm_RcpFogRange',
+	'gm_PS_FogEnabled',
+	'gm_FogColour',
+	'gm_VS_FogEnabled',
+	'gm_AlphaTestEnabled',
+	'gm_AlphaRefValue',
+	
 	// 폰트 관련 상수들
 	'font_texture_page_size',
 	
