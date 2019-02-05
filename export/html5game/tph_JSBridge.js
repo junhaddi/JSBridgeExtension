@@ -26,15 +26,15 @@ const CONST_NAMES = [
 	'spritespeed_framespersecond',
 	'spritespeed_framespergameframe',
 	'sprite_index',
-	'sprite_width',
-	'sprite_height',
-	'sprite_xoffset',
-	'sprite_yoffset',
+	//'sprite_width', // 버그
+	//'sprite_height', // 버그
+	//'sprite_xoffset', // 버그
+	//'sprite_yoffset', // 버그
 	'image_alpha',
 	'image_angle',
-	'image_blend',
+	//'image_blend', // 버그
 	'image_index',
-	'image_number',
+	//'image_number', // 버그
 	'image_speed',
 	'image_xscale',
 	'image_yscale',
@@ -79,23 +79,42 @@ const CONST_NAMES = [
 	'gm_AlphaTestEnabled',
 	'gm_AlphaRefValue',
 	
+	// 버텍스 관련 상수들
+	'vertex_type_float1',
+	'vertex_type_float2',
+	'vertex_type_float3',
+	'vertex_type_float4',
+	'vertex_type_colour',
+	'vertex_type_ubyte4',
+	'vertex_usage_position',
+	'vertex_usage_colour',
+	'vertex_usage_normal',
+	'vertex_usage_textcoord',
+	'vertex_usage_blendweight',
+	'vertex_usage_blendindices',
+	'vertex_usage_depth',
+	'vertex_usage_tangent',
+	'vertex_usage_binormal',
+	'vertex_usage_fog',
+	'vertex_usage_sample',
+	
 	// 폰트 관련 상수들
 	'font_texture_page_size',
 	
 	// 타임라인 관련 상수들
 	'timeline_index',
-	'timeline_running',
+	//'timeline_running', // 버그
 	'timeline_speed',
 	'timeline_position',
-	'timeline_loop',
+	//'timeline_loop', // 버그
 	
 	// 인스턴스 관련 상수들
 	'id',
 	'visible',
 	'solid',
 	'persistent',
-	'depth',
-	'layer',
+	//'depth', // 버그
+	//'layer', // 버그
 	// alarm //TODO: 처리해야 함
 	'object_index',
 	'health',
@@ -115,10 +134,10 @@ const CONST_NAMES = [
 	'xprevious',
 	'yprevious',
 	'mask_index',
-	'bbox_bottom',
-	'bbox_left',
-	'bbox_right',
-	'bbox_top'
+	//'bbox_bottom', // 버그
+	//'bbox_left', // 버그
+	//'bbox_right', // 버그
+	//'bbox_top' // 버그
 ];
 
 let jsbridge_init = () => {
@@ -146,7 +165,7 @@ let jsbridge_init = () => {
 	});
 };
 
-let jsbridge_step = () => {
+let jsbridge_step = (instance) => {
 
 	EACH(window, (func, funcName) => {
 		
@@ -159,7 +178,7 @@ let jsbridge_step = () => {
 				value : funcName
 			}) === true) {
 
-				window[funcName] = func(undefined, undefined);
+				window[funcName] = func(instance, undefined);
 			}
 		}
 	});

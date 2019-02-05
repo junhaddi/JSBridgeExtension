@@ -57,10 +57,10 @@
                     "mvc": "1.0",
                     "argCount": 0,
                     "args": [
-                        
+                        2
                     ],
                     "externalName": "jsbridge_step",
-                    "help": "jsbridge_step()",
+                    "help": "jsbridge_step(id)",
                     "hidden": false,
                     "kind": 5,
                     "name": "jsbridge_step",

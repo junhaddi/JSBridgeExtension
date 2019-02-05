@@ -79,6 +79,25 @@ const CONST_NAMES = [
 	'gm_AlphaTestEnabled',
 	'gm_AlphaRefValue',
 	
+	// 버텍스 관련 상수들
+	'vertex_type_float1',
+	'vertex_type_float2',
+	'vertex_type_float3',
+	'vertex_type_float4',
+	'vertex_type_colour',
+	'vertex_type_ubyte4',
+	'vertex_usage_position',
+	'vertex_usage_colour',
+	'vertex_usage_normal',
+	'vertex_usage_textcoord',
+	'vertex_usage_blendweight',
+	'vertex_usage_blendindices',
+	'vertex_usage_depth',
+	'vertex_usage_tangent',
+	'vertex_usage_binormal',
+	'vertex_usage_fog',
+	'vertex_usage_sample',
+	
 	// 폰트 관련 상수들
 	'font_texture_page_size',
 	
@@ -146,7 +165,7 @@ let jsbridge_init = () => {
 	});
 };
 
-let jsbridge_step = () => {
+let jsbridge_step = (instance) => {
 
 	EACH(window, (func, funcName) => {
 		
@@ -159,7 +178,7 @@ let jsbridge_step = () => {
 				value : funcName
 			}) === true) {
 
-				window[funcName] = func(undefined, undefined);
+				window[funcName] = func(instance, undefined);
 			}
 		}
 	});
