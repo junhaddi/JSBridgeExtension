@@ -60,6 +60,9 @@ const CONST_NAMES = [
 	'path_orientation',
 	'path_endaction',
 	
+	// 폰트 관련 상수들
+	'font_texture_page_size',
+	
 	// 타임라인 관련 상수들
 	'timeline_index',
 	'timeline_running',
