@@ -137,7 +137,13 @@ const CONST_NAMES = [
 	'bbox_bottom',
 	'bbox_left',
 	'bbox_right',
-	'bbox_top'
+	'bbox_top',
+	
+	// 게임 관련 상수들
+	'game_id',
+	'game_save_id',
+	'game_display_name',
+	'game_project_name'
 ];
 
 let jsbridge_init = () => {

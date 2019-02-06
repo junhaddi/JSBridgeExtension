@@ -26,15 +26,15 @@ const CONST_NAMES = [
 	'spritespeed_framespersecond',
 	'spritespeed_framespergameframe',
 	'sprite_index',
-	//'sprite_width', // 버그
-	//'sprite_height', // 버그
-	//'sprite_xoffset', // 버그
-	//'sprite_yoffset', // 버그
+	'sprite_width',
+	'sprite_height',
+	'sprite_xoffset',
+	'sprite_yoffset',
 	'image_alpha',
 	'image_angle',
-	//'image_blend', // 버그
+	'image_blend',
 	'image_index',
-	//'image_number', // 버그
+	'image_number',
 	'image_speed',
 	'image_xscale',
 	'image_yscale',
@@ -103,18 +103,18 @@ const CONST_NAMES = [
 	
 	// 타임라인 관련 상수들
 	'timeline_index',
-	//'timeline_running', // 버그
+	'timeline_running',
 	'timeline_speed',
 	'timeline_position',
-	//'timeline_loop', // 버그
+	'timeline_loop',
 	
 	// 인스턴스 관련 상수들
 	'id',
 	'visible',
 	'solid',
 	'persistent',
-	//'depth', // 버그
-	//'layer', // 버그
+	'depth',
+	'layer',
 	// alarm //TODO: 처리해야 함
 	'object_index',
 	'health',
@@ -134,10 +134,16 @@ const CONST_NAMES = [
 	'xprevious',
 	'yprevious',
 	'mask_index',
-	//'bbox_bottom', // 버그
-	//'bbox_left', // 버그
-	//'bbox_right', // 버그
-	//'bbox_top' // 버그
+	'bbox_bottom',
+	'bbox_left',
+	'bbox_right',
+	'bbox_top',
+	
+	// 게임 관련 상수들
+	'game_id',
+	'game_save_id',
+	'game_display_name',
+	'game_project_name'
 ];
 
 let jsbridge_init = () => {
