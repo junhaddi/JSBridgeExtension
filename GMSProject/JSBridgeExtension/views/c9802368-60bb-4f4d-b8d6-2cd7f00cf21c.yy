@@ -26,7 +26,8 @@
         "f4744d77-7c81-405b-a018-181fca61614d",
         "c7250a49-a461-48d5-b2dc-23ee90eb7449",
         "cb55f786-ca5a-466c-9b1b-77bd70355d9b",
-        "fbb843f8-4bf6-43f1-8713-e055fa1f9f76"
+        "fbb843f8-4bf6-43f1-8713-e055fa1f9f76",
+        "f1a4a100-38f7-42c0-bf74-95692b6fdf5b"
     ],
     "filterType": "GMScript",
     "folderName": "jsbridge_func",
